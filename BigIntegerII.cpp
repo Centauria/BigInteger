@@ -725,7 +725,7 @@ Number* operate(SetNode *node){
 	}
 	return NULL;
 }
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, char* argv[])
 {
 	SetNode root;
 	char input[TLEN];
