@@ -1,4 +1,4 @@
-﻿typedef double type;
+typedef double type;
 
 typedef struct complex{
 	type real;

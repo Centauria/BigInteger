@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+#include "stdafx.h"
 
 
 void conjugate_complex(int n, Complex in[], Complex out[])
