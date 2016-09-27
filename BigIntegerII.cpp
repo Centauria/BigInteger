@@ -731,7 +731,7 @@ int main(int argc, char* argv[])
 	char input[TLEN];
 	int state = 0;
 	int error = 0;
-	while (scanf("%s",input) != EOF){
+	while (gets(input)){
 		switch (state){
 		case 0:
 			error = 0;
