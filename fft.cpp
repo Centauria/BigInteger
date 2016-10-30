@@ -43,8 +43,9 @@ void c_mul(Complex a, Complex b, Complex *c)
 
 void c_div(Complex a, Complex b, Complex *c)
 {
-	c->real = (a.real * b.real + a.imag * b.imag) / (b.real * b.real + b.imag * b.imag);
-	c->imag = (a.imag * b.real - a.real * b.imag) / (b.real * b.real + b.imag * b.imag);
+	type d = b.real * b.real + b.imag * b.imag;
+	c->real = (a.real * b.real + a.imag * b.imag) / d;
+	c->imag = (a.imag * b.real - a.real * b.imag) / d;
 }
 
 #define SWAP(a,b)  tempr=(a);(a)=(b);(b)=tempr
